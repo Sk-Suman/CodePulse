@@ -1,0 +1,22 @@
+<div class="container" style="width: 50%;height: 50%;">
+
+    <h1 class="d-flex justify-content-center text-primary">Edit Category</h1>
+
+    <form>
+        <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" [(ngModel)]="Data.name" required>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">URL Handle</label>
+            <input type="text" class="form-control" id="urlHandle" name="urlHandle" [(ngModel)]="Data.urlHandel" required>
+        </div>
+
+        <div class="container d-flex justify-content-center">
+            <button type="submit" class="btn btn-info" (click)="OnSave()">Save</button>
+            <button type="button" class="btn btn-warning" [routerLink]="['/categoryblog']">Back</button>
+        </div>
+    </form>
+
+</div>
